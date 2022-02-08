@@ -9,12 +9,22 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Container(
-        alignment: Alignment.center,
-        color: Colors.black,
-        child: Text('Olá mundo!!@@'),
+    return const MaterialApp(
+      home: HomePage(),
+    );
+  }
+}
+
+class HomePage extends StatelessWidget {
+  const HomePage({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("cbb Asfaltos"),
       ),
+      drawer: Drawer(),
     );
   }
 }
